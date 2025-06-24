@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji's</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+	width:85%;
+	background-color:black;
+	margin:auto;
+    min-height: 700px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: white;
+        padding: 30px;
+    }
+    h2 {
+      color: gold;
+      padding-top: 40px;
+      font-size: 24px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        gap: 47px;
+        justify-content: center;
+        margin: 0 auto;
+         grid-auto-rows: 100px;
+         align-items: center;  
+    }
+
+    button{
+        font-weight: bold;
+        height: 40px;
+        size: 15%;
+        font-size: 24px;
+        cursor: pointer;    
+        
+    }
+    button:hover{
+        transition: 0.2s ease;
+        transform: translateY(-5px);    
+    }
+    .red{
+        background-color: red;
+        color: white;
+    }
+    .yellow{
+        background-color: orange;
+        color: red;
+        border-radius: 50px;
+    }
+    .purple{
+        background-color: purple;
+        color: white;
+        border: 2px solid white;
+    }
+    .violet{
+        background-color: purple;
+        color: white;
+        border: 2px dashed white;
+        border-radius: 35px;
+    }
+    .green{
+        background-color: green;
+        color: black;
+        border: 2px dotted white;
+         border-radius: 10px;
+    }
+    .green2{
+        background-color: green;
+        color: white;
+         border: 2px dashed white;
+    }
+     .yellow2{
+        background-color: orange;
+        color: black; 
+        border:4px ridge red;
+    }
+    .white{
+        background-color: white;
+        color: red;
+        border: 4px inset purple;
+        border-radius:20px 0px 20px 0px;
+       
+    }
+    .litepink{
+        background-color: pink;
+        color: darkblue;
+        border: 4px inset purple;
+        border-radius:0px 20px 0px 20px;
+    }
+    .pink{
+        background-color: pink;
+        color:darkblue;
+        border:3px purple;
+        border-radius:0px 20px 0px 20px;
+        border-bottom: dotted;
+        border-top: dotted;
+    }
+    .grey{
+        background-color: gray;
+        color: black;
+        border: black;
+        border-left: dotted;
+        border-right: dotted;
+    }
+    .blue{
+        background-color: blue;
+        color: white;
+        border: 2px white;
+        border-radius: 20px 0px 20px 0px;
+        border-top: dotted;
+        border-bottom:inset;
+    }
+
+</style>
+<body>
+
+    
+
+<div>
+<h2>Click the correct button you can hear a song</h2>
+
+<div class="container">
+    <div class="grid">
+        
+        <button class="red">😊 smile</button>
+        <button class="yellow">😢 sad</button>
+        <button class="purple">😊 happy</button>
+        <button class="violet">😢 sad</button>
+        <button class="green">😊 happy</button>
+        <button class="green2">🙂 smile</button>
+        <button class="yellow2">😊 happy</button>
+        <button class="white">🙂 smile</button>
+         <button class="litepink">😢 sad</button>
+         <button class="pink">🙂 smile</button>
+           <button class="grey">😢 sad</button>
+          <button class="blue">😊 happy</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
