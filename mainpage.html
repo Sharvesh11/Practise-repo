@@ -61,7 +61,7 @@
         /* below the goofy nav barrRR */
            .wrap{
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
             min-height:80vh;
@@ -76,16 +76,24 @@
            }
            .header{
             text-align: left;
-            max-width: 50%;
-            padding: 60px;
+            width: 50%;
+            padding: 20px;
             margin: 8px;
-            transform: translateY(-40px);
-            
+            transform: none; 
            }
+           .hero-img {
+             display: flex;
+             width: 50%;
+            justify-content: center;
+             align-items: center;
+            padding: 20px;
+            }
+   
+           
            .hero-img img {
             width: 100%;
             max-width: 600px;
-            transform: translateX(-40px);
+            transform: none;
             animation: float 3s ease-in-out infinite;
             }
             @keyframes float {
