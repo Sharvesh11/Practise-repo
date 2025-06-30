@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Practise</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+             margin: 50px auto;
+            padding: 20px;
+           width: 90%;
+           max-width: 1000px;
+           border-radius: 1px solid black;
+           box-shadow: 0 0 10px rgba(0,0,0,0.1);;
+            padding: 40px 10px;
+            margin-top: 5%;
+            justify-content: space-around;
+            background-color:rgb(242, 109, 19);
+        }
+        /* .image1,.image2,.image22,.image3,.image4,.img5{
+            width: 100%;
+        } */
+        .container img{
+            max-width: 180px;
+            display: block;
+            width: 100%;
+            height: auto;
+             margin: 0 auto;
+        }
+        .container h2{
+            width: 100%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28x;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+         .container h6{
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 20px;
+             padding-bottom: 20px;
+        }
+        .container>.image2 img{
+            filter: blur(10px);
+        }
+        .container > div {
+        flex: 0 0 18%;
+        margin-bottom: 20px;
+        }
+        .container>.image22 img{
+            filter: brightness(50%);
+        }
+        .container>.image3 img{
+            filter:brightness(100%);
+        }
+        .container>.image4 img{
+            filter:brightness(150%);
+        }
+        .container>.img22 img{
+            filter: contrast(0.5);
+        }
+         .container>.img3 img {
+            filter: contrast(1);
+        }
+        .container>.img4 img{
+            filter: contrast(1.5);
+        }
+        .container>.img5 img{
+            filter:contrast(2) ;
+        }
+        .container>.image222 img{
+            filter: grayscale(0.3);
+        }
+        .container>.image33 img{
+            filter:grayscale(0.5);
+        }
+        .container>.image44 img{
+            filter:grayscale(1);
+        }
+        /* .container>hue1{
+            filter:hue-rotate() ;
+        } */
+        .container>.hue2 img{
+            filter: hue-rotate(0deg);
+        }
+        .container>.hue3 img{
+            filter:hue-rotate(120deg);
+        }
+        .container>.hue4 img{
+            filter:hue-rotate(240deg);
+        }
+        .container>.hue5 img{
+            filter: hue-rotate(360deg);
+        }
+        .container>.invert2 img{
+            filter: invert(0%);
+        }
+        .container>.invert3 img{
+            filter: invert(50%);
+        }
+        .container>.invert4 img{
+            filter:invert(100%);
+        }
+        .container>.Sepia2 img{
+            filter: saturate(1);
+        }
+         .container>.Sepia3 img{
+            filter: saturate(0.5);
+        }
+        .container>.Sepia4 img{
+            filter: saturate(0.1);
+        }
+         .container>.Sepia5 img{
+            filter: saturate(0.1);
+        }
+        .container>.d2{
+            filter:drop-shadow(0px 0px 15px red);
+        }
+        h1{
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            
+            padding: 20px;
+        }
+        .larger-images > div{
+            flex: 0 0 30%;
+        }
+        .larger-images img {
+        max-width: 350px; 
+        }
+          
+    </style>
+</head>
+<body>
+    <h1>Filter practise</h1>
+    <div class="container larger-images">
+        <h2>Filter</h2>
+        <h2 >Filter: Blur</h2>
+        <div class="image1">
+            <img src="rose.jpg" alt="Rose">
+            <h6>Original</h6>
+        </div>
+        <div class="image2">
+            <img src="rose.jpg" alt="Rose">
+            <h6>Filter</h6>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Filter: Brightness</h2>
+        <div class="image1">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="image22">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="image3">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="image4">
+            <img src="rose.jpg" alt="rose">
+        </div>
+    </div>
+       <div class="container">
+        <h2>Filter: Contrast</h2>
+        <div class="image1">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="img22">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="img3">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="img4">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="img5">
+            <img src="rose.jpg" alt="rose">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Filter: GrayScale</h2>
+        <div class="image1">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="image222">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="image33">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="image44">
+            <img src="rose.jpg" alt="rose">
+        </div>
+    </div>
+     <div class="container">
+        <h2>Filter: Hue Rotate</h2>
+        <div class="hue1">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="hue2">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="hue3">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="hue4">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="hue5">
+            <img src="rose.jpg" alt="rose">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Filter: Invert</h2>
+        <div class="invert1">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="invert2">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="invert3">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="invert4">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="invert5">
+            <img src="rose.jpg" alt="rose">
+        </div>
+    </div>
+     <div class="container">
+        <h2>Filter: Sepia</h2>
+        <div class="Sepia1">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="Sepia2">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="Sepia3">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="Sepia4">
+            <img src="rose.jpg" alt="rose">
+        </div>
+        <div class="Sepia5">
+            <img src="rose.jpg" alt="rose">
+        </div>
+    </div>
+    <div class="container larger-images">
+        <h2>Filter</h2>
+        <h2 >Filter: Drop-Shadow</h2>
+        <div class="d1">
+            <img src="rose.jpg" alt="Rose">
+            <h6>Original</h6>
+        </div>
+        <div class="d2">
+            <img src="rose.jpg" alt="Rose">
+            <h6>Drop-Shadow</h6>
+        </div>
+    </div>
+</body>
+</html>
